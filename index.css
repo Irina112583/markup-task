@@ -1,0 +1,352 @@
+.layout
+{
+    display: grid;
+    grid-template-columns: 267px 1fr 1fr 1fr 180px;
+    grid-template-rows: 60px auto 135px auto 500px;
+    grid-template-areas: 'a 0 0 i b'
+    'y c c d z'
+    'e g g g z'
+    'w l l l z'
+    'w f h j z';
+}
+
+.red
+{
+    color: red;
+}
+
+.gray
+{
+    color: #aaa;
+}
+
+.light-blue
+{
+    color: #6da2e1;
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.widget-title
+{
+    height: 36px;
+    cursor: pointer;
+}
+
+.time
+{
+    font-size: 64.6%;
+    color: #999;
+}
+
+a
+{
+    text-decoration: none;
+    color: #0054b9;
+}
+
+.active
+{
+
+    cursor: pointer;
+}
+
+.none-style
+{
+    list-style: none;
+}
+
+ul,
+figure
+{
+    padding: 0;
+    margin: 0;
+}
+
+li
+{
+    line-height: 1.9;
+}
+
+h1,
+h2
+{
+    margin-top: 1em;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 138.5%;
+}
+
+body
+{
+    font: 13.33px Arial, Helvetica, sans-serif;
+}
+
+.city
+{
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    margin-top: 12px;
+    margin-left: 35px;
+}
+
+.city::before
+{
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    background-image: url('images/city-icon.svg');
+    background-size: 19px 19px;
+    height: 19px;
+    width: 19px;
+}
+
+.settings
+{
+    text-align: right;
+    margin: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.mail
+{
+    padding: 3px 0 3px 10px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+}
+
+.wallet
+{
+    font-size: 92.3%;
+    margin-top: 6px;
+}
+
+.currency
+{
+    letter-spacing: 1px;
+}
+
+.rate-change
+{
+    margin-right: 10px;
+}
+
+.adv1
+{
+    display: block;
+    margin-top: 1.39em;
+}
+
+.adv1-title
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo
+{
+    margin: 23px 0 0 116px;
+    width: 140px;
+    height: 80px;
+    background-image: url(logo.png);
+}
+
+.content-types
+{
+    margin-top: 32px;
+    margin-bottom: 9px;
+}
+
+.content-type
+{
+    font-size: 1.16em;
+    margin-right: 16px;
+}
+
+.search-form
+{
+    display: flex;
+}
+
+.search-input
+{
+    width: calc(92% - 85px);
+    height: 36px;
+    border: 2px solid #ffdb4d;
+}
+
+.search-button
+{
+    font-size: 16px;
+    width: 75px;
+    height: 36px;
+    border: 2px solid #ffdb4d;
+    background: #ffdb4d;
+}
+
+.search-arrow
+{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 0 18px 10px;
+    border-color: transparent transparent transparent #ffdb4d;
+}
+
+.search-example
+{
+    margin-top: 7px;
+}
+
+.icon
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.switch-joke
+{
+    padding-top: 50px;
+}
+
+.switch-joke::before
+{
+    content: '↻ ';
+    font-weight: normal;
+    opacity: .5;
+}
+
+.program-icon
+{
+    width: 130px;
+    height: 40px;
+    background-image: url(program.png);
+}
+
+.program-time,
+.program-name
+{
+    margin-right: 5px;
+}
+
+.auto-news-wrapper
+{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+}
+
+.auto-news
+{
+    padding: 8px 0;
+    overflow-y: scroll;
+    padding-right: 30px;
+    max-height: 240px;
+    width: 100%;
+}
+
+.auto-news-wrapper::before,
+.auto-news-wrapper::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+}
+
+.auto-news-wrapper::before
+{
+    top: 0;
+    background: linear-gradient(to bottom, white, transparent);
+}
+
+.auto-news-wrapper::after
+{
+    bottom: 0;
+    background: linear-gradient(to top, white, transparent);
+}
+
+.weather-icon
+{
+    width: 36px;
+    height: 30px;
+    background-image: url(weather.png);
+}
+
+.probki-icon
+{
+    width: 33px;
+    height: 33px;
+    background-image: url(probki.png);
+}
+
+.weather,
+.probki
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.transport
+{
+    margin: 7px 0;
+}
+
+.city-box
+{
+    grid-area: a;
+}
+
+.register-box
+{
+    grid-area: b;
+}
+
+.main-box
+{
+    grid-area: c;
+}
+
+.advert1-box
+{
+    grid-area: d;
+}
+
+.logo-box
+{
+    grid-area: e;
+}
+
+.left-column-box
+{
+    grid-area: f;
+}
+
+.search-box
+{
+    grid-area: g;
+}
+
+.middle-column-box
+{
+    grid-area: h;
+}
+
+.settings-box
+{
+    grid-area: i;
+}
+
+.right-column-box
+{
+    grid-area: j;
+}
+
+.advert2-box
+{
+    grid-area: l;
+}
