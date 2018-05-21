@@ -99,7 +99,7 @@ body
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    background-image: url('images/city-icon.svg');
+    background-image: url('city.png');
     background-size: 19px 19px;
     height: 19px;
     width: 19px;
